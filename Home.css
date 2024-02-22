@@ -1,0 +1,148 @@
+
+body { 
+	font-family: Arial, sans-serif; 
+	margin: 20px; 
+} 
+
+.container { 
+	max-width: 1100px; 
+	margin: 0 auto; 
+	background-color: #b6cceb; 
+	padding: 20px; 
+	border-radius: 4px; 
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin-top: 40px;
+	box-shadow:10px 10px 10px 10px  grey;
+} 
+
+
+input{
+    margin-left: 12px;
+}
+
+h1 { 
+	text-align: center; 
+	margin-bottom: 20px; 
+} 
+
+
+
+form { 
+	display: flex; 
+	justify-content: center; 
+	margin-bottom: 20px; 
+	margin-top: 90px;
+	margin-left: 40px;
+} 
+.ok{
+	margin-top: -60px;
+}
+#total{
+	justify-content: center;
+	margin-left: 260px;
+}
+
+input[type="text"], 
+input[type="number"] { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	outline: none; 
+} 
+
+input[type="text"]::placeholder, 
+input[type="number"]::placeholder { 
+	color: #999; 
+} 
+
+button { 
+	padding: 10px 20px; 
+	background-color: #4677e1; 
+	color: white; 
+	border: none; 
+	border-radius: 4px; 
+	cursor: pointer; 
+    margin-left: 12px;
+    
+} 
+
+button:hover { 
+	background-color: #566cea; 
+    border: 2px solid  black;
+} 
+
+.expense-table { 
+	border: 1px solid #ddd; 
+	border-radius: 8px; 
+	overflow: hidden; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+
+table { 
+	width: 100%; 
+	border-collapse: collapse; 
+} 
+
+thead th { 
+	background-color: #f2f2f2; 
+	padding: 10px; 
+	text-align: left; 
+} 
+
+tbody td { 
+	padding: 10px; 
+	border-top: 1px solid #ddd; 
+} 
+
+.delete-btn { 
+	color: red; 
+	cursor: pointer; 
+} 
+
+.total-amount { 
+	padding: 10px; 
+	text-align: right; 
+	background-color: #f2f2f2; 
+}
+
+.total{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+   height: 40px;
+   margin-top: 27px;
+   margin-left: 10px;
+}
+
+#Your-budget{
+	margin-left: 100px;
+}
+
+.LeftB{
+	/* justify-content: center; */
+	margin-left: 119px;
+	width: 250px;
+}
+
+label{
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+form{
+  display: flex;
+  justify-content:space-around;
+}
+
+.head{
+	margin-left:370px;
+	margin-top: -5px;
+}
+
+.money{
+	display: flex;
+	margin-top: -20px;
+
+}

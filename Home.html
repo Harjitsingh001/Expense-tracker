@@ -1,0 +1,82 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="Home.css" />
+</head>
+
+<body>
+
+
+    <h1>Expense Tracker </h1>
+
+    <div class="container">
+
+
+        <div class="total" style="margin-top: 10px;">
+            <h5 id="Your-budget" >Your Budget:<input type="text" id="input"></h5>
+            <Button class="btn" id="btn"> Submit</Button>
+
+            
+        </div>
+        <h5 class="head">  Category :<input type="text" placeholder="category" id="saman" ></h5>
+        <div class="money">
+
+            <h4 class="LeftB">
+                Total-money :<span id="total" style="margin-left: 10px;"></span>
+            </h4>
+
+            <h4 class="LeftB">
+                Left-money :<span id="left" style="margin-left: 10px;"></span>
+            </h4>
+
+            <h4 class="LeftB">
+                Spend Money : <span id="rem" style="margin-left: 10px;"></span>
+            </h4>
+        </div>
+
+        <div class="ok">
+            <form id="expense-form" style="margin-top: 100px;">
+
+                <!-- <input type="text" id="expense-category" placeholder="Category" required /> -->
+                <label for="dog-names" class="down">Select Category:</label>
+                <select name="category" id="expense-category">
+                    <option value="food">Food</option>
+                    <option value="gym">Gym</option>
+                    <option value="cloths">Cloths</option>
+                </select>
+                <input type="text" id="expense-amount" placeholder="Amount" required />
+                <input type="date" id="date" placeholder="Date">
+
+                <button type="submit">
+                    Add
+                </button>
+            </form>
+        </div>
+        <div class="expense-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+
+                <tbody id="expense-list"></tbody>
+
+            </table>
+
+        </div>
+        <div class="total-amount">
+            <strong>Total:</strong>
+            $<span id="total-amount">0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
