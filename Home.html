@@ -5,23 +5,21 @@
 <head>
     <title>Expense Tracker</title>
     <link rel="stylesheet" type="text/css" href="Home.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
 
-
-    <h1>Expense Tracker </h1>
+    
+    <h1 class="ttle">Expense Tracker </h1>
 
     <div class="container">
 
 
-        <div class="total" style="margin-top: 10px;">
-            <h5 id="Your-budget" >Your Budget:<input type="text" id="input"></h5>
-            <Button class="btn" id="btn"> Submit</Button>
-
-            
-        </div>
-        <h5 class="head">  Category :<input type="text" placeholder="category" id="saman" ></h5>
+        
+       
         <div class="money">
 
             <h4 class="LeftB">
@@ -37,6 +35,12 @@
             </h4>
         </div>
 
+        <div class="total" style="margin-top: 10px;">
+            <h5 id="Your-budget" >Your Budget:<input type="text" id="input" ></h5>
+            <Button class="btn" id="btn"> Submit</Button>
+
+            <h5 class="head">  Category :<input type="text" placeholder="category" id="saman" ></h5>
+        </div>
         <div class="ok">
             <form id="expense-form" style="margin-top: 100px;">
 
@@ -50,7 +54,7 @@
                 <input type="text" id="expense-amount" placeholder="Amount" required />
                 <input type="date" id="date" placeholder="Date">
 
-                <button type="submit">
+                <button type="submit" class="btn2">
                     Add
                 </button>
             </form>
@@ -62,6 +66,7 @@
                         <th>Category</th>
                         <th>Amount</th>
                         <th>Date</th>
+                        <th>Update</th>
                     </tr>
                 </thead>
 
