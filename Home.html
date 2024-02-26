@@ -12,34 +12,36 @@
 
 <body>
 
-    
+
     <h1 class="ttle">Expense Tracker </h1>
 
     <div class="container">
 
 
-        
-       
+
+
         <div class="money">
 
             <h4 class="LeftB">
-                Total-money :<span id="total" style="margin-left: 10px;"></span>
+                Total-money :<span id="total" style="margin-left: 10px;color: yellow;"></span>
             </h4>
 
             <h4 class="LeftB">
-                Left-money :<span id="left" style="margin-left: 10px;"></span>
+                Left-money :<span id="left" style="margin-left: 10px; color: greenyellow;"></span>
             </h4>
 
             <h4 class="LeftB">
-                Spend Money : <span id="rem" style="margin-left: 10px;"></span>
+                Spend Money : <span id="rem" style="margin-left: 10px ;color:rgb(174, 52, 0);"></span>
             </h4>
         </div>
 
         <div class="total" style="margin-top: 10px;">
-            <h5 id="Your-budget" >Your Budget:<input type="text" id="input" ></h5>
+            <h5 id="Your-budget">Your Budget:<input type="text" id="input"></h5>
             <Button class="btn" id="btn"> Submit</Button>
 
-            <h5 class="head">  Category :<input type="text" placeholder="category" id="saman" ></h5>
+            <h5 class="head"> Category :<input type="text" placeholder="category" id="saman"></h5>
+            <h5 class="head"> Filter :<input type="text" placeholder="category" id="saman"></h5>
+
         </div>
         <div class="ok">
             <form id="expense-form" style="margin-top: 100px;">
@@ -47,9 +49,9 @@
                 <!-- <input type="text" id="expense-category" placeholder="Category" required /> -->
                 <label for="dog-names" class="down">Select Category:</label>
                 <select name="category" id="expense-category">
-                    <option value="food">Food</option>
+                    <!-- <option value="food">Food</option>
                     <option value="gym">Gym</option>
-                    <option value="cloths">Cloths</option>
+                    <option value="cloths">Cloths</option> -->
                 </select>
                 <input type="text" id="expense-amount" placeholder="Amount" required />
                 <input type="date" id="date" placeholder="Date">
@@ -76,12 +78,38 @@
             </table>
 
         </div>
+
+        <!-- // here is the total money usage  -->
+
         <div class="total-amount">
             <strong>Total:</strong>
             $<span id="total-amount">0</span>
         </div>
+
+        <div id="editModal" class="modal">
+            <h2 class="mew">Edit Expense  </h2>
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                
+                <form id="editForm">
+                    <!-- Add input fields for editing category, amount, and date -->
+                    <label for="editCategory" class="modal-headings" style="width: 100px; margin-bottom:30px;">Category:</label>
+                    <input type="text" id="editCategory" required>
+                    <label  class="modal-headings" for="editAmount">Amount:</label>
+                    <input type="number" id="editAmount" step="0.01" required>
+                    <label  class="modal-headings" for="editDate" >Date:</label>
+                    <input type="date" id="editDate" required>
+                    <button  class="modal-headings" type="button" id="saveChangesBtn" >Save </button>
+                </form>
+            </div>
+        </div>
+
     </div>
-    <script src="script.js"></script>
+
+    <!-- <div style="border: 2px solid; height: 300px; width: 500px; margin-left: 500px;">
+
+    </div> -->
+    <script src="Script.js"></script>
 </body>
 
 </html>
