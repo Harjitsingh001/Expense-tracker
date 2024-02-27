@@ -1,232 +1,242 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
 
-body { 
-	font-family: Arial, sans-serif; 
-	margin: 20px; 
-} 
-
-.ttle{
+.ttle {
 	color: #0c1019;
 	text-shadow: 2px 2px 15px #222226;
 }
 
-.container { 
-	max-width: 1100px; 
-	margin: 0 auto; 
-	background-color: #b6cceb; 
-	padding: 20px; 
-	border-radius: 4px; 
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    margin-top: 25px;
-	box-shadow:10px 10px 10px 10px  grey;
-} 
-.down{
-	margin-top: 1px;
-	margin-left: -40px;}
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	/* background-color: #b6cceb;  */
+	background-color: #bfc3ca;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-top: 25px;
+	box-shadow: 10px 10px 10px 10px grey;
+}
 
-#input{
+.down {
+	margin-top: 1px;
+	margin-left: -40px;
+}
+
+#input {
 	height: 10px;
 	width: 90px;
 }
 
-#saman{
+#saman {
 	height: 10px;
 	width: 90px;
 	margin-top: 35px;
 	margin-left: 50px;
-	
-}
-input{
-    margin-left: 12px;
+
 }
 
-h1 { 
-	text-align: center; 
-	margin-bottom: 20px; 
-} 
-form { 
-	display: flex; 
-	justify-content: center; 
-	margin-bottom: 20px; 
+input {
+	margin-left: 12px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
 	margin-top: 90px;
 	margin-left: 40px;
-} 
-.ok{
+}
+
+.ok {
 	margin-top: -60px;
 	display: flex;
-	justify-content:space-around;
+	justify-content: space-around;
 }
-#total{
+
+#total {
 	justify-content: center;
 	margin-left: 260px;
 }
 
-input[type="text"], 
-input[type="number"] { 
-	padding: 10px; 
-	border: 1px solid #ccc; 
-	border-radius: 4px; 
-	outline: none; 
-} 
+input[type="text"],
+input[type="number"] {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	outline: none;
+}
 
-input[type="text"]::placeholder, 
-input[type="number"]::placeholder { 
-	color: #999; 
-} 
+input[type="text"]::placeholder,
+input[type="number"]::placeholder {
+	color: #999;
+}
 
-button { 
-	padding: 10px 20px; 
-	background-color: #426fd1; 
-	color: white; 
-	border: none; 
-	border-radius: 4px; 
-	cursor: pointer; 
-    margin-left: 12px;
+button {
+	padding: 10px 20px;
+	background-color: #3d4352	;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-left: 12px;
 	height: 50px;
-    
-} 
 
-button:hover { 
-	background-color: #566cea; 
-    border: 2px solid  black;
-} 
-
-.expense-table { 
-	border: 1px solid #ddd; 
-	border-radius: 8px; 
-	overflow: hidden; 
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-} 
-
-table { 
-	width: 100%; 
-	border-collapse: collapse; 
-} 
-
-thead th { 
-	background-color: #f2f2f2; 
-	padding: 10px; 
-	text-align: left; 
-} 
-
-tbody td { 
-	padding: 10px; 
-	border-top: 1px solid #ddd; 
-} 
-
-.delete-btn { 
-	color: red; 
-	cursor: pointer; 
-} 
-
-.total-amount { 
-	padding: 10px; 
-	text-align: right; 
-	background-color: #f2f2f2; 
 }
 
-.total{
-    display: flex;
-    justify-content: center;
+button:hover {
+	background-color: #566cea;
+	border: 2px solid black;
 }
 
-.btn{
-   /* height: 40px;
+.expense-table {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+thead th {
+	background-color: #f2f2f2;
+	padding: 10px;
+	text-align: left;
+}
+
+tbody td {
+	padding: 10px;
+	border-top: 1px solid #ddd;
+}
+
+.delete-btn {
+	color: red;
+	cursor: pointer;
+}
+
+.total-amount {
+	padding: 10px;
+	text-align: right;
+	background-color: #dce0e8;
+	margin-right: 60px;
+	margin-left: 60px;
+}
+
+.total {
+	display: flex;
+	justify-content: center;
+}
+
+.btn {
+	/* height: 40px;
    margin-top: 27px;
    margin-left: 10px; */
-   height: 40px;
-    margin-top:28px;
-    margin-left: 8px;
-    height: 33px;
+	height: 40px;
+	margin-top: 28px;
+	margin-left: 8px;
+	height: 33px;
 }
 
-.btn2{
+.btn2 {
 	margin-top: -5px;
 	height: 40px;
 	margin-left: 10px;
 }
 
-#Your-budget{
+#Your-budget {
 	margin-left: -27px;
 }
 
-.LeftB{
+.LeftB {
 	/* justify-content: center; */
 	margin-left: 119px;
 	width: 250px;
 	border: 2px solid grey;
 	padding: 20px;
-	background-color: #527ad2;
-	border-radius: 12px ;
+	background-color: #3d4352;
+	border-radius: 12px;
 	color: rgb(223, 235, 244);
 }
 
-label{
+label {
 	margin-top: 10px;
 	margin-right: 10px;
 }
 
-form{
-  display: flex;
-  justify-content:space-around;
+form {
+	display: flex;
+	justify-content: space-around;
 }
 
-.head{
-	margin-left:70px;
+.head {
+	margin-left: 70px;
 	margin-top: -5px;
 }
 
-.money{
+.money {
 	display: flex;
 	margin-top: -30px;
 	padding: -20px;
 }
-#expense-form{
+
+#expense-form {
 	margin-top: 69px;
-    height: 30px;
+	height: 30px;
 }
 
-                                   /* Modal */
+/* Modal */
 
 .modal {
-    display: none;
+	display: none;
 	width: 900px;
-    position: fixed;
+	position: fixed;
 	height: 200px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #2d2d2e;
-    padding: 20px;
-    border: 1px solid #272424;
-    z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #2d2d2e;
+	padding: 20px;
+	border: 1px solid #272424;
+	z-index: 1;
 	border-radius: 13px;
 }
-#editModal{
-	box-shadow:  10px 10px 10px  rgb(53, 50, 50);
+
+#editModal {
+	box-shadow: 10px 10px 10px rgb(53, 50, 50);
 }
 
 
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 30px;
-    cursor: pointer;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 30px;
+	cursor: pointer;
 	color: white;
 }
 
 
- /* Modal Heading  */
-.mew{
+/* Modal Heading  */
+.mew {
 	color: white;
 	margin-left: 60px;
-	text-decoration:underline;
+	text-decoration: underline;
 
 	/* margin-bottom: 200px; */
 }
 
-#saveChangesBtn:hover{
-    color:#4545da;
+#saveChangesBtn:hover {
+	color: #4545da;
 	background-color: #fdfeff;
 	font-size: 15px;
 	font-weight: bold;
@@ -234,29 +244,30 @@ form{
 }
 
 .modal-content input {
-    width: 100%; 
-    padding: 8px; 
+	width: 100%;
+	padding: 8px;
 	height: 30px;
 	margin-top: -20px;
-    box-sizing: border-box; 
-    margin-bottom: 10px;
-	transition: transform 0.3s ease; 
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	transition: transform 0.3s ease;
 }
 
 .modal-content {
 	margin-bottom: 300px;
 }
-#saveChangesBtn{
+
+#saveChangesBtn {
 	margin-top: -27px;
-    margin-left: 20px;
-    height: 42px;
-    width: 76px;
+	margin-left: 20px;
+	height: 42px;
+	width: 76px;
 }
-.modal-headings{
+
+.modal-headings {
 	margin-top: -19px;
-    margin-left: 20px;
+	margin-left: 20px;
 	color: white;
 	font-style: italic;
 	font-weight: 300;
 }
-

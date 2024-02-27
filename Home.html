@@ -31,17 +31,17 @@
             </h4>
 
             <h4 class="LeftB">
-                Spend Money : <span id="rem" style="margin-left: 10px ;color:rgb(174, 52, 0);"></span>
+                Spend Money : <span id="rem" style="margin-left: 10px ;color:rgb(216, 152, 57);"></span>
             </h4>
         </div>
 
         <div class="total" style="margin-top: 10px;">
-            <h5 id="Your-budget">Your Budget:<input type="text" id="input"></h5>
+            <h5 id="Your-budget">Your Budget:<input type="text" id="input" ></h5>
             <Button class="btn" id="btn"> Submit</Button>
             <h5 class="head">  Category :<input type="text" placeholder="category" id="saman" ></h5>
-            <h5 style="margin-left:90px; margin-top: 35px;"> FilterBy:
-                <select id="filter-items">
-
+            <h5 style="margin-left:90px; margin-top: 35px; margin-right: 0px;"> FilterBy:
+                <select id="filter-items" >
+                    <option value="all">All</option>
                 </select>
             </h5>
 
@@ -50,7 +50,6 @@
         <div class="ok">
             <form id="expense-form" style="margin-top: 100px;">
 
-                <!-- <input type="text" id="expense-category" placeholder="Category" required /> -->
                 <label for="name" class="down">Select Category:</label>
                 <select name="category" id="expense-category">
 
@@ -58,7 +57,7 @@
                 </select>
 
                 <input type="number" id="expense-amount" placeholder="Amount" required />
-                <input type="date" id="date" placeholder="Date">
+                <input type="date" id="date" placeholder="Date" required>
 
                 <button type="submit" class="btn2">
                     Add
@@ -111,9 +110,6 @@
 
     </div>
 
-    <!-- <div style="border: 2px solid; height: 300px; width: 500px; margin-left: 500px;">
-
-    </div> -->
     <script src="Script.js"></script>
 </body>
 
