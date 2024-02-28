@@ -37,7 +37,7 @@
 
         <div class="total" style="margin-top: 10px;">
             <h5 id="Your-budget">Your Budget:<input type="text" id="input" ></h5>
-            <Button class="btn" id="btn"> Submit</Button>
+            <Button class="btn" id="btn" onclick=""> Submit</Button>
             <h5 class="head">  Category :<input type="text" placeholder="category" id="saman" ></h5>
             <h5 style="margin-left:90px; margin-top: 35px; margin-right: 0px;"> FilterBy:
                 <select id="filter-items" >
@@ -76,7 +76,9 @@
                 </thead>
 
 
-                <tbody id="expense-list"></tbody>
+                <tbody id="expense-list">
+                    
+                </tbody>
 
             </table>
 
@@ -89,6 +91,9 @@
             $<span id="total-amount">0</span>
         </div>
 
+
+        <!-- //   Modal  -->
+
         <div id="editModal" class="modal">
             <h2 class="mew">Edit Expense </h2>
             <div class="modal-content">
@@ -99,6 +104,9 @@
                     <label for="editCategory" class="modal-headings"
                         style="width: 100px; margin-bottom:30px;">Category:</label>
                     <input type="text" id="editCategory" required>
+                    <!-- <select  id="edit-cat">
+
+                    </select> -->
                     <label class="modal-headings" for="editAmount">Amount:</label>
                     <input type="number" id="editAmount" step="0.01" required>
                     <label class="modal-headings" for="editDate">Date:</label>
